@@ -19,14 +19,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Python dependencies...'
-                bat 'pip install -r requirements.txt'
+                bat 'C:\\Users\\LENOVO\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo 'Running unit tests...'
-                bat 'pytest test_app.py -v'
+                bat 'C:\\Users\\LENOVO\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pytest test_app.py -v'
             }
         }
 
